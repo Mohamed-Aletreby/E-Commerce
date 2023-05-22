@@ -1,0 +1,21 @@
+.error-page {
+  background-color: rgb(0 0 0 / 4%);
+  height: calc(100vh - 52px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-page__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.error-page__message h2 {
+  font-size: 4.8rem;
+  text-transform: capitalize;
+  max-width: 10ch;
+}

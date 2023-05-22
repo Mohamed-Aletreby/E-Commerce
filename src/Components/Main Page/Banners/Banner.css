@@ -1,0 +1,81 @@
+/* Start Banner Section */
+.banner-section {
+  padding: 30px 0;
+}
+
+.banner__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.banner__card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.banner__card .card__img img {
+  border-radius: 10px;
+}
+
+.banner__card .card__body {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner__card .card__body {
+    padding: 0 30px;
+  }
+}
+
+.banner__card .card__title {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  max-width: 18ch;
+  margin-block-end: 50px;
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 992px) {
+  .banner__card .card__title {
+    font-size: 2.2rem;
+    margin-block-end: 25px;
+  }
+}
+
+.banner__card .card__link a {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: var(--body-background);
+  background-color: var(--main-color);
+  padding: 8px 10px 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.banner__card .card__link a:hover {
+  background-color: var(--hover-color);
+}
+
+.banner__card .card__link i {
+  margin-inline-start: 5px;
+  transition: margin 0.3s;
+}
+
+.banner__card .card__link a:hover > i {
+  margin-inline-start: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .banner__card .card__link a {
+    padding: 6px 12px;
+  }
+}
+
+/* End Banner Section */

@@ -1,0 +1,129 @@
+/* Start Variables */
+:root {
+  --body-background: #fff;
+  --main-color: #038e42;
+  --main-heading-color: #03012c;
+  --secondary-heading-color: #233a95;
+  --main-muted-color: #6b6b6b;
+  --border-color: #d9d9e9;
+  --hover-color: #fdc040;
+  --light-background: #def9ec;
+  --deleted-color: #9a031e;
+}
+
+/* :root[data-theme="dark"] {
+  --body-background: #1f1f1f;
+  --main-color: #038e42;
+  --main-heading-color: #74c2d5;
+  --secondary-heading-color: #fdfdfd;
+  --main-muted-color: #6b6b6b;
+  --border-color: #d9d9e9;
+  --hover-color: #fdc040;
+  --light-background: #038e42;
+  --deleted-color: #9a031e;
+} */
+/* End Variables */
+
+/* Start Global Rules */
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Scrollbar Styling */
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-background);
+}
+
+body,
+button,
+input {
+  font-family: "Cairo";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+a:focus,
+a:visited {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Container Media Quires */
+/* === Extra small devices & Mobile === */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* === Small devices ==== */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* === Medium devices === */
+@media (min-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* === Large devices and Extra large devices === */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1610px;
+    /* max-width: 1320px; */
+  }
+}
+
+/* End Global Rules */

@@ -1,0 +1,53 @@
+.navbar {
+  background-color: darkcyan;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  background-color: transparent;
+  position: relative;
+  color: #000;
+  cursor: pointer;
+}
+
+.navbar__link--registration {
+  background-color: cadetblue;
+  color: #fff;
+  padding: 5px 40px;
+  border-radius: 5px;
+}
+.navbar__link--cart::before {
+  content: attr(data-cart);
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.navbar__icons-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
